@@ -1,0 +1,58 @@
+
+ <script type="text/javascript">
+window.onload = function() 
+{ 
+    document.getElementById('name1').style.display = 'none';
+    document.getElementById('name2').style.display = 'none';
+    document.getElementById('name3').style.display = 'none';
+};
+
+function button1function(id){
+
+    if(document.getElementById(id).style.display == 'none'){
+        document.getElementById(id).style.display = 'initial';
+    }else{
+        document.getElementById(id).style.display = 'none';
+    }
+}
+function button2function(id){
+    if(document.getElementById(id).style.display == 'none'){
+        document.getElementById(id).style.display = 'initial';
+    }else{
+        document.getElementById(id).style.display = 'none';
+    }
+}
+function button3function(id){
+    if(document.getElementById(id).style.display == 'none'){
+        document.getElementById(id).style.display = 'initial';
+    }else{
+        document.getElementById(id).style.display = 'none';
+    }
+}
+</script>
+
+<button id="phabricator" onclick="button1function('name1')">PHABRICATOR</button>
+<button id="admin portal" onclick="button2function('name2')">ADMIN PORTAL</button>
+<button id="support portal" onclick="button3function('name3')">SUPPORT PORTAL</button>
+
+<select id="name1" onchange="location = this.value;">
+    <option value="https://phab.zoomrx.com/">Home Page</option>
+    <option value="https://phab.zoomrx.com/source/annotation-as-a-service/">AAAS</option>
+    <option value="https://phab.zoomrx.com/source/congress-support/">Congress Support</option>
+    <option value="https://phab.zoomrx.com/source/congress-ap-server/">Congress AP Server</option>
+    <option value="https://phab.zoomrx.com/source/congress-search/">Congress Search</option>
+    <option value="https://phab.zoomrx.com/source/congress-utils/">Congress Utils</option>
+    <option value="https://phab.zoomrx.com/source/helpers/">Helpers</option>
+    <option value="https://phab.zoomrx.com/source/trials-extraction-pipeline/">Trials Data Pipeline</option>
+    <option value="https://phab.zoomrx.com/source/tweet-extraction/">Tweet Extraction</option>
+    
+</select>
+
+<select id="name2" onchange="location = this.value;">
+    <option value="https://admin-portal-dev.zoomrx.ai/#/congresses">Dev env</option>
+    <option value="https://admin-portal-zeus.zoomrx.ai/#/congresses">Zeus env</option>
+</select>
+
+<select id="name3" onchange="location = this.value;">
+    <option value="https://support.ferma.ai/main/tenants">Support</option>
+</select>
